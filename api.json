@@ -1,0 +1,159 @@
+{
+  "info": {
+    "_postman_id": "0d9b3ce0-eb7a-434a-bb6b-c75b972b0fc6",
+    "name": "MockAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "37628164"
+  },
+  "item": [
+    {
+      "name": "create",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\":\"{{$randomFullName}}\",\n    \"emial\":\"{{$randomEmail}}\",\n    \"avatar\":\"{{$randomImageUrl}}\",\n    \"password\":\"123456\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://ca10c8c14cfbfc5345d6.free.beeceptor.com/api/users",
+          "protocol": "https",
+          "host": [
+            "ca10c8c14cfbfc5345d6",
+            "free",
+            "beeceptor",
+            "com"
+          ],
+          "path": [
+            "api",
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\":\"{{$randomFullName}}\",\n    \"emial\":\"{{$randomEmail}}\",\n    \"avatar\":\"{{$randomImageUrl}}\",\n    \"password\":\"123456\"\n}"
+        },
+        "url": {
+          "raw": "https://ca10c8c14cfbfc5345d6.free.beeceptor.com/api/users",
+          "protocol": "https",
+          "host": [
+            "ca10c8c14cfbfc5345d6",
+            "free",
+            "beeceptor",
+            "com"
+          ],
+          "path": [
+            "api",
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getOne",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\":\"{{$randomFullName}}\",\n    \"emial\":\"{{$randomEmail}}\",\n    \"avatar\":\"{{$randomImageUrl}}\",\n    \"password\":\"123456\"\n}"
+        },
+        "url": {
+          "raw": "https://ca10c8c14cfbfc5345d6.free.beeceptor.com/api/users/c45750df853146e4e145",
+          "protocol": "https",
+          "host": [
+            "ca10c8c14cfbfc5345d6",
+            "free",
+            "beeceptor",
+            "com"
+          ],
+          "path": [
+            "api",
+            "users",
+            "c45750df853146e4e145"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\":\"{{$randomFullName}}\",\n    \"emial\":\"{{$randomEmail}}\",\n    \"avatar\":\"{{$randomImageUrl}}\",\n    \"password\":\"123456\"\n}"
+        },
+        "url": {
+          "raw": "https://ca10c8c14cfbfc5345d6.free.beeceptor.com/api/users/5aae660eb0c8e1e3db89",
+          "protocol": "https",
+          "host": [
+            "ca10c8c14cfbfc5345d6",
+            "free",
+            "beeceptor",
+            "com"
+          ],
+          "path": [
+            "api",
+            "users",
+            "5aae660eb0c8e1e3db89"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\":\"Mostafa\",\n    \"emial\":\"{{$randomEmail}}\",\n    \"avatar\":\"{{$randomImageUrl}}\",\n    \"password\":\"123456\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://ca10c8c14cfbfc5345d6.free.beeceptor.com/api/users/c45750df853146e4e145",
+          "protocol": "https",
+          "host": [
+            "ca10c8c14cfbfc5345d6",
+            "free",
+            "beeceptor",
+            "com"
+          ],
+          "path": [
+            "api",
+            "users",
+            "c45750df853146e4e145"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
